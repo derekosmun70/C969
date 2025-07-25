@@ -1,0 +1,16 @@
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969_Project.Form1.resources
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969-Project.csproj.GenerateResource.cache
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969-Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969-Project.AssemblyInfoInputs.cache
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969-Project.AssemblyInfo.cs
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969-Project.csproj.CoreCompileInputs.cache
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\bin\Debug\net8.0-windows\C969-Project.exe
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\bin\Debug\net8.0-windows\C969-Project.deps.json
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\bin\Debug\net8.0-windows\C969-Project.runtimeconfig.json
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\bin\Debug\net8.0-windows\C969-Project.dll
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\bin\Debug\net8.0-windows\C969-Project.pdb
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969-Project.dll
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\refint\C969-Project.dll
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969-Project.pdb
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\C969-Project.genruntimeconfig.cache
+C:\Users\derek\OneDrive - Western Governors University\C969\C969-Project\obj\Debug\net8.0-windows\ref\C969-Project.dll
