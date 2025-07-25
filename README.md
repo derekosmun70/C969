@@ -1,73 +1,70 @@
-# C969
+# Scheduling Application
 
-A.   Create an application by completing the following tasks in C#:
+## Overview
 
-1.   Create a login form that has the ability to do the following:
+This C# desktop application, developed for the C969 course, is a scheduling tool designed for managing customer records and appointments in a business environment, such as consulting or service-based organizations. It enables users to securely log in, manage customer data, schedule appointments, and generate reports while enforcing business rules like operating hours and data validation. The app connects to a database to store and retrieve data, incorporating robust error handling and time zone awareness for a seamless user experience.
 
-a.   Determine a user’s location.
+## Features
 
-b.   Translate login and error control messages (e.g., “The username and password do not match.”) into English and one additional language.
+### User Authentication and Login
+- **Login Form**: Verifies username and password against stored credentials.
+- **Location Detection**: Identifies the user's location upon login.
+- **Multi-Language Support**: Translates login and error messages (e.g., "The username and password do not match.") into English and one additional language.
+- **Login History**: Logs each login attempt's timestamp and username in `Login_History.txt`, appending new entries.
 
-c.   Verify the correct username and password.
+### Customer Management
+- **CRUD Operations**: Add, update, and delete customer records.
+- **Validation**:
+  - Records require name, address, and phone number fields.
+  - Fields are trimmed and must be non-empty.
+  - Phone numbers allow only digits and dashes.
+- **Exception Handling**: Implemented for add, update, and delete operations.
 
-2.   Provide the ability to add, update, and delete customer records.
+### Appointment Management
+- **CRUD Operations**: Add, update, and delete appointments, linking them to customers and capturing appointment types.
+- **Validation**:
+  - Appointments must be scheduled between 9:00 a.m. and 5:00 p.m., Monday–Friday, Eastern Standard Time (EST).
+  - Prevents overlapping appointments.
+- **Exception Handling**: Covers add, update, and delete operations.
+- **Calendar View**: Displays appointments for a selected day via a monthly calendar.
+- **Time Zone Support**: Adjusts appointment times based on user time zones and daylight saving time.
+- **Alerts**: Notifies users of appointments starting within 15 minutes upon login.
 
-a.   Validate each of the following requirements for customer records:
+### Reporting
+Using collection classes and lambda expressions, the app generates:
+- **Appointment Types by Month**: Counts appointment types per month.
+- **User Schedules**: Shows each user's schedule.
+- **Custom Report**: An additional report (e.g., customer appointment history).
 
-•    that a customer record includes name, address, and phone number fields
+## Purpose
+This application streamlines customer and appointment management for businesses operating in EST. It ensures data integrity, supports international users through localization and time zone adjustments, and provides actionable insights via reports. It's ideal for coordinating schedules across multiple users while maintaining security and audit logs.
 
-•    that fields are trimmed and non-empty
+## Requirements
+- **Environment**: Visual Studio with .NET framework.
+- **Database**: Requires a configured backend database (connection setup needed).
+- **Dependencies**: Standard .NET libraries for forms, data handling, and time zone management.
 
-•    that the phone number field allows only digits and dashes
+## Installation
+1. Unzip the exported project file.
+2. Open the solution in Visual Studio.
+3. Configure the database connection (e.g., update connection strings).
+4. Build and run the application.
 
-b.   Add exception handling that can be used when performing each of the following operations for customer records:
+## Usage
+1. Log in with valid credentials.
+2. Manage customer records or appointments via dedicated sections.
+3. Use the calendar to view or schedule appointments.
+4. Generate reports from the report menu.
+5. Alerts and login logs are handled automatically.
 
-•    “add” operations
+## Project Structure
+- Developed in C# using Visual Studio.
+- Exported as a ZIP file for submission.
+- Includes comprehensive error handling and validation to meet business requirements.
 
-•    “update” operations
+## Notes
+- Ensure the database is properly set up before running.
+- The app assumes a standard EST business schedule for validation.
+- Login history is stored in `Login_History.txt` in the application directory.
 
-•    “delete database” operations
-
-3.   Provide the ability to add, update, and delete appointments, capture the type of appointment, and link to a specific customer record in the database.
-
-a.   Validate each of the following requirements for appointments:
-
-•    Require appointments to be scheduled during the business hours of 9:00 a.m. to 5:00 p.m., Monday–Friday, eastern standard time.
-
-•    Prevent the scheduling of overlapping appointments.
-
-b.   Add exception handling that can be used when performing each of the following operations for appointments:
-
-•    “add” operations
-
-•    “update” operations
-
-•    “delete database” operations
-
-4.   Create a calendar view feature, including the ability to view appointments on a specific day by selecting a day of the month from a calendar of the months of the year.
-
-5.   Provide the ability to automatically adjust appointment times based on user time zones and daylight saving time.
-
-6.   Create a function that generates an alert whenever a user who has an appointment within 15 minutes logs in to their account.
-
-7.   Create a function that allows users to generate the three reports listed using collection classes, incorporating a lambda expression into the code for each of the following reports:
-
-•    the number of appointment types by month
-
-•    the schedule for each user
-
-•    one additional report of your choice
-
-8.   Record the timestamp and the username of each login in a text file named “Login_History.txt,” ensuring that each new record is appended to the log file.
-
-
-
-B.   Submit the project by doing the following:
-
-1.   Export the project in Visual Studio format.
-
-2.   Export your project from the IDE as a ZIP file.
-
-
-
-C.   Demonstrate professional communication in the content and presentation of your submission.
+This project demonstrates robust scheduling functionality, professional code organization, and adherence to business constraints, making it a practical tool for real-world applications.
